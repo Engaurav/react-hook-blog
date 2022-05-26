@@ -4,7 +4,7 @@ import { getFirestore, collection ,query , addDoc} from 'firebase/firestore/lite
 import { useFormInput } from '../hooks'; 
 
 const db = getFirestore(appFirebase);
-const q = query(collection(db, "cities"));
+const q = query(collection(db, "posts"));
 
 
 export default function CreatePost() {
